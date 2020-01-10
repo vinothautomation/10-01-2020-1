@@ -8,6 +8,8 @@ public class DayOne {
 		System.setProperty("webdriver.chrome.driver", "D:\\vinoth\\SELENIUM\\Project\\GIT\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
+		String title = driver.getTitle();
+		System.out.println(title);
 		driver.quit();
 		
 	}
